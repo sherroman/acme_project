@@ -8,6 +8,8 @@ from django.views.generic.edit import CreateView
 
 from django.urls import include, path, reverse_lazy
 
+handler404 = 'core.views.page_not_found'
+
 
 urlpatterns = [
     path('', include('pages.urls')),
